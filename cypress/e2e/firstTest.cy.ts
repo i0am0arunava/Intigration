@@ -1,10 +1,10 @@
 describe('Read Article Modal', () => {
   it('visits the website', () => {
-    cy.visit('hhttps://fascinating-gaufre-425a30.netlify.app/');
+    cy.visit('https://fascinating-gaufre-425a30.netlify.app/');
   });
 
   it('navigates to an article and opens the modal', () => {
-    cy.visit('hhttps://fascinating-gaufre-425a30.netlify.app/account/sport/News/74'); // Use the correct article ID
+    cy.visit('https://fascinating-gaufre-425a30.netlify.app/account/sport/News/74'); // Use the correct article ID
 
     // Wait for the modal to appear
     
@@ -12,7 +12,7 @@ describe('Read Article Modal', () => {
 
 
   it('checks if the modal content is displayed correctly', () => {
-    cy.visit('hhttps://fascinating-gaufre-425a30.netlify.app/account/sport/News/74'); // Replace '1' with a valid article ID
+    cy.visit('https://fascinating-gaufre-425a30.netlify.app/account/sport/News/74'); // Replace '1' with a valid article ID
    
     cy.get('h2').should('contain.text', 'Table Tennis'); // Replace with actual sport name
     cy.get('h3').should('contain.text', 'Excitement and Drama in Unforgettable Match'); // Replace with actual article title
